@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK素材网 - 免费图片视频下载</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/material.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>KK素材网</h1>
+            <nav>
+                <a href="#" class="active">全部</a>
+                <a href="#images">图片</a>
+                <a href="#videos">视频</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="搜索素材...">
+            <button>搜索</button>
+        </div>
+
+        <div class="filters">
+            <select>
+                <option value="latest">最新上传</option>
+                <option value="popular">最受欢迎</option>
+                <option value="downloads">下载最多</option>
+            </select>
+        </div>
+
+        <div class="gallery">
+            <!-- 图片素材 -->
+            <div class="material-item" data-type="image">
+                <div class="material-preview">
+                    <img src="assets/images/sample1.jpg" alt="示例图片1">
+                    <div class="overlay">
+                        <button class="download-btn" data-url="assets/images/sample1.jpg">下载</button>
+                        <div class="info">
+                            <span>4K高清</span>
+                            <span>JPG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-info">
+                    <h3>自然风景图片</h3>
+                    <p>4K超清摄影作品</p>
+                </div>
+            </div>
+
+            <!-- 视频素材 -->
+            <div class="material-item" data-type="video">
+                <div class="material-preview">
+                    <video src="assets/videos/sample1.mp4" poster="assets/images/video-thumb1.jpg"></video>
+                    <div class="overlay">
+                        <button class="play-btn">播放</button>
+                        <button class="download-btn" data-url="assets/videos/sample1.mp4">下载</button>
+                        <div class="info">
+                            <span>1080P</span>
+                            <span>MP4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-info">
+                    <h3>自然风景视频</h3>
+                    <p>高清视频素材</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="prev">上一页</button>
+            <span class="current">1</span>
+            <button class="next">下一页</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 KK素材网 版权所有</p>
+        <a href="index.html">返回主页</a>
+    </footer>
+
+    <!-- 更多素材浮动按钮 -->
+    <div class="floating-button" onclick="showMoreSites(); return false;">
+        <span class="icon">🔗</span>
+        <span class="text">更多素材</span>
+    </div>
+
+    <script src="js/material.js"></script>
+</body>
+</html> 

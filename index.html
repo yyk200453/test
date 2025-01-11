@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鲸智无界</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>KK剪辑 - 专业视频剪辑软件资源站</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <canvas id="particleCanvas"></canvas>
+    <!-- 背景音乐 -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/background.mp3" type="audio/mp3">
+    </audio>
     
+    <!-- 音乐控制按钮 -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn">
+            <span class="icon">🎵</span>
+        </button>
+    </div>
+
+    <!-- 视频背景 -->
+    <div class="video-background">
+        <video id="bgVideo" autoplay muted loop playsinline preload="auto">
+            <source src="assets/videos/background.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
     <div class="container">
+        <!-- 在线人数计数器 -->
+        <div class="online-counter">
+            <div class="counter-icon">👥</div>
+            <div class="counter-text">
+                当前在线：<span class="counter-number">0</span> 人
+            </div>
+        </div>
+
+        <!-- Logo -->
         <div class="logo">
-            <img src="assets/images/logo.png" alt="无界">
-            <h1>鲸智无界</h1>
+            <h1>KK世界</h1>
+            <p class="slogan">专业的视频剪辑软件资源站</p>
+            <p class="description">为您提供优质的视频剪辑软件和素材资源</p>
         </div>
 
-        <div class="content">
-            <p class="slogan">每日分享最新资源，项目拆解，点击即可进入无界！</p>
-            <p class="description">利他思维和因果思维一直伴随着我的网创生涯。</p>
-            <p class="mission">希望认识无界的每一位兄弟不虚此行</p>
-        </div>
-
-        <nav class="navigation">
-            <a href="#" class="nav-item">官标站 鲸智无界</a>
-            <a href="#" class="nav-item">无界工具箱</a>
-            <a href="#" class="nav-item">逆风翻盘项目</a>
-            <a href="#" class="nav-item">联系客服</a>
-            <a href="#" class="nav-item">售后群</a>
+        <!-- 导航菜单 -->
+        <nav>
+            <a href="material.html" class="nav-item">
+                <span class="icon">🎬</span>
+                素材网
+            </a>
+            <a href="software.html" class="nav-item">
+                <span class="icon">💻</span>
+                专用剪辑软件(免费)
+            </a>
+            <a href="https://pan.quark.cn/s/a8e072b6f665" class="nav-item" onclick="showVerificationCode(event)">
+                <span class="icon">📱</span>
+                安卓破解软件
+            </a>
+            <a href="#" class="nav-item" onclick="showCustomerService(event)">
+                <span class="icon">💬</span>
+                售后客服
+            </a>
         </nav>
     </div>
 
