@@ -27,4 +27,8 @@ npm-debug.log*
 
 # 临时文件
 *.tmp
-*.temp 
+*.temp
+
+# 大文件目录
+downloads/
+*.zip 
