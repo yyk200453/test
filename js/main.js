@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 在线人数计数器功能
 document.addEventListener('DOMContentLoaded', () => {
     const counterElement = document.querySelector('.counter-number');
-    let baseCount = Math.floor(Math.random() * (2000 - 1500) + 1500); // 基础人数1500-2000
+    let baseCount = Math.floor(Math.random() * (2000 - 1500) ); // 基础人数1500-2000
     
     function updateCounter() {
         // 添加更新动画类
